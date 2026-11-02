@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahavishnu E — Frontend Web Developer</title>
+  <meta name="description" content="Portfolio of Mahavishnu E, a frontend web developer in Nagercoil, Tamil Nadu building responsive, interactive websites with HTML, CSS, JavaScript, React and GSAP.">
+  <meta name="theme-color" content="#08080a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2308080a'/%3E%3Ccircle cx='23' cy='22' r='3' fill='%23ff6a2b'/%3E%3Cpath d='M6 24V8h4l4 8 4-8h4v16' fill='none' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Scroll-driven background: frames are painted to this canvas by script.js -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="bg-scrim" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Mahavishnu E — home">MAHAVISHNU<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#featured">Featured Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="projects.html">All Projects &rarr;</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">Frontend Web Developer</p>
+        <h1 id="hero-title">Mahavishnu E</h1>
+        <p class="tagline">I build responsive, interactive websites with clean layouts and thoughtful motion.</p>
+        <p class="meta">Nagercoil, Tamil Nadu</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn" href="#featured">View projects</a>
+          <a class="btn" href="resume.pdf" download>Download resume</a>
+        </div>
+      </div>
+      <span class="scroll-cue" aria-hidden="true"></span>
+    </section>
+
+    <!-- Skills ticker -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" data-marquee>
+        <span>HTML5</span><i></i><span>CSS3</span><i></i><span>JavaScript</span><i></i><span>React.js</span><i></i>
+        <span>Bootstrap</span><i></i><span>Tailwind CSS</span><i></i><span>GSAP</span><i></i><span>Git</span><i></i>
+        <span>GitHub</span><i></i><span>Linux</span><i></i><span>Networking</span><i></i>
+      </div>
+    </div>
+
+    <!-- Experience (reverse chronological by start date) -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="orb" style="left:-14rem;top:2rem" data-parallax="0.12" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow">Experience</p>
+        <h2 class="section-title" id="exp-title">Where I've worked</h2>
+
+        <div class="stats">
+          <div class="card stat"><b data-count="3">3</b><span>Client website projects</span></div>
+          <div class="card stat"><b data-count="3">3</b><span>Roles &amp; internships</span></div>
+          <div class="card stat"><b data-count="7">7</b><span>Frontend technologies</span></div>
+          <div class="card stat"><b data-count="2">2</b><span>Training certificates</span></div>
+        </div>
+
+        <div class="timeline">
+        <span class="timeline-fill" aria-hidden="true"></span>
+
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>Web Developer &middot; <span class="org">Artic9</span></h3>
+              <p class="card-sub">Nagercoil, Tamil Nadu &middot; Full-time</p>
+            </div>
+            <p class="date">Dec 2025 – Present</p>
+          </div>
+          <ul class="bullets">
+            <li>Contributed to frontend development across three client website projects.</li>
+            <li>Developed responsive page layouts and interface elements using HTML, CSS, and JavaScript.</li>
+            <li>Refined typography, spacing, and styling for a consistent experience across desktop, tablet, and mobile screens.</li>
+            <li>Addressed interface issues, incorporated feedback, and managed source code changes using Git and GitHub.</li>
+          </ul>
+          <ul class="tags in-card" aria-label="Technologies">
+            <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li><li class="tag">Git</li><li class="tag">GitHub</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>Intern &middot; <span class="org">Besant Technologies, BTM Layout</span></h3>
+              <p class="card-sub">Bengaluru, Karnataka</p>
+            </div>
+            <p class="date">Mar 2025 – Aug 2025</p>
+          </div>
+          <ul class="bullets">
+            <li>Gained exposure to Linux and cloud services; completed Linux and CCNA training during the internship.</li>
+          </ul>
+          <ul class="tags in-card" aria-label="Technologies">
+            <li class="tag">Linux</li><li class="tag">Cloud Services</li><li class="tag">Networking</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <div>
+              <h3>Intern – Apprenticeship &middot; <span class="org">Appin Technology Coimbatore</span></h3>
+              <p class="card-sub">Coimbatore, Tamil Nadu</p>
+            </div>
+            <!-- TODO: resume lists the end date as "[End Date]". Add it here once confirmed. -->
+            <p class="date">Started Mar 2024</p>
+          </div>
+          <ul class="bullets">
+            <li>Gained practical exposure to HTML5 and Bootstrap through a web development apprenticeship.</li>
+          </ul>
+          <ul class="tags in-card" aria-label="Technologies">
+            <li class="tag">HTML5</li><li class="tag">Bootstrap</li>
+          </ul>
+        </article>
+        </div><!-- /timeline -->
+
+        <h3 class="sub-heading">Education &amp; training</h3>
+        <div class="grid-2">
+          <div class="card">
+            <ul class="edu-list">
+              <li><strong>Bachelor of Engineering in Computer Science</strong>
+                <span class="card-sub">Amrita College of Engineering and Technology &middot; Jun 2025</span></li>
+              <li><strong>Diploma in Electrical and Electronics Engineering</strong>
+                <span class="card-sub">Amrita College of Engineering and Technology &middot; First Class &middot; Apr 2022</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul class="edu-list">
+              <li><strong>Linux Training — Certificate of Completion</strong>
+                <span class="card-sub">Besant Technologies, BTM Layout, Bengaluru &middot; May 2025</span></li>
+              <li><strong>CCNA Training — Certificate of Completion</strong>
+                <span class="card-sub">Besant Technologies, BTM Layout, Bengaluru &middot; Apr 2025</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="orb red" style="right:-16rem;top:0" data-parallax="-0.1" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow">Skills</p>
+        <h2 class="section-title" id="skills-title">What I work with</h2>
+        <div class="grid-2">
+          <div class="card skill-group">
+            <h3>Web Technologies</h3>
+            <ul class="tags"><li class="tag">HTML5</li><li class="tag">CSS3</li><li class="tag">JavaScript</li></ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Frontend</h3>
+            <ul class="tags"><li class="tag">React.js</li><li class="tag">Bootstrap</li><li class="tag">Tailwind CSS</li></ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Animation</h3>
+            <ul class="tags"><li class="tag">GSAP (GreenSock)</li></ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Tools &amp; Version Control</h3>
+            <ul class="tags"><li class="tag">Git</li><li class="tag">GitHub</li><li class="tag">Visual Studio Code</li></ul>
+          </div>
+          <div class="card skill-group">
+            <h3>Additional Knowledge</h3>
+            <ul class="tags"><li class="tag">Linux</li><li class="tag">Networking Fundamentals</li><li class="tag">Cloud Services</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="section" id="featured" aria-labelledby="feat-title">
+      <div class="container">
+        <p class="eyebrow">Featured Projects</p>
+        <h2 class="section-title" id="feat-title">Live client websites</h2>
+        <div class="featured-grid">
+          <article class="card project-tile">
+            <a class="shot" href="https://theosis.in/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="images/theosis.jpg" alt="" width="1440" height="900" loading="lazy"></a>
+            <div class="tile-body">
+              <p class="card-sub">Wellness equipment retailer · Nagercoil</p>
+              <h3>Theosis Health &amp; Care</h3>
+              <p>Website for a wellness brand selling massage chairs, thermal beds and therapy products, built around booking a free in-store demo.</p>
+              <ul class="tags in-card" aria-label="Technologies"><li class="tag">HTML5</li><li class="tag">CSS3</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://theosis.in/" target="_blank" rel="noopener noreferrer">Visit live site<span class="visually-hidden"> — Theosis Health &amp; Care</span> &nearr;</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project-tile">
+            <a class="shot" href="https://sudhasaseendransiddha.org.in/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="images/sudha.jpg" alt="" width="1440" height="900" loading="lazy"></a>
+            <div class="tile-body">
+              <p class="card-sub">Medical college &amp; hospital · Kanyakumari</p>
+              <h3>Sudha Saseendran Siddha Medical College</h3>
+              <p>Large informational site for a Siddha medical college and hospital, covering courses, departments, facilities and hospital services.</p>
+              <ul class="tags in-card" aria-label="Technologies"><li class="tag">HTML5</li><li class="tag">CSS3</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://sudhasaseendransiddha.org.in/" target="_blank" rel="noopener noreferrer">Visit live site<span class="visually-hidden"> — Sudha Saseendran Siddha Medical College</span> &nearr;</a>
+              </div>
+            </div>
+          </article>
+          <article class="card project-tile">
+            <a class="shot placeholder" href="https://pipesntiles.in/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><span>pipesntiles.in</span></a>
+            <div class="tile-body">
+              <p class="card-sub">Building materials &amp; sanitaryware retailer · Tamil Nadu</p>
+              <h3>PIPES N TILES</h3>
+              <p>Showroom website for a sanitaryware and tiles retailer, featuring a product catalogue, a 360° virtual showroom and five branch locations.</p>
+              <ul class="tags in-card" aria-label="Technologies"><li class="tag">HTML5</li><li class="tag">CSS3</li><li class="tag">JavaScript</li></ul>
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://pipesntiles.in/" target="_blank" rel="noopener noreferrer">Visit live site<span class="visually-hidden"> — PIPES N TILES</span> &nearr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="more-row"><a class="btn" href="projects.html">See features &amp; details &rarr;</a> <a class="btn" href="https://github.com/mahavish1411-cyber" target="_blank" rel="noopener noreferrer">GitHub: mahavish1411-cyber &nearr;</a></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="card contact-card">
+          <span class="ring" aria-hidden="true"></span><span class="ring r2" aria-hidden="true"></span>
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title" id="contact-title" style="margin-bottom:1rem">Let's build something</h2>
+          <p>Looking to contribute to a development team creating intuitive, responsive websites and reusable user interfaces.</p>
+          <a class="btn btn-primary btn-lg btn-pulse" href="mailto:mahavish1411@gmail.com">mahavish1411@gmail.com</a>
+          <ul class="contact-list">
+            <li><a href="tel:+916383390801">+91 63833 90801</a></li>
+            <li><a href="https://www.linkedin.com/in/maha-vishnu-68766635a" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/mahavish1411-cyber" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li>Nagercoil, Tamil Nadu</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Mahavishnu E</p>
+      <p>
+        <a href="projects.html">Projects</a>
+        <a href="resume.pdf" download>Resume</a>
+        <a href="https://github.com/mahavish1411-cyber" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#top">Back to top &uarr;</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
