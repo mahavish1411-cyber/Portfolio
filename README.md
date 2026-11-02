@@ -4,6 +4,8 @@ A cinematic, scroll-driven personal portfolio for **Mahavishnu E**, a frontend w
 
 **Live site:** https://vishnu-e-11.vercel.app
 
+![Portfolio hero section](images/preview-hero.jpg)
+
 ---
 
 ## Highlights
@@ -15,6 +17,12 @@ A cinematic, scroll-driven personal portfolio for **Mahavishnu E**, a frontend w
 - **Two pages** with a shared design: `index.html` (landing) and `projects.html` (full project details).
 - **Responsive and accessible.** Works from phone to desktop, with a skip link, keyboard focus styles, semantic landmarks, and a mobile menu that supports `Esc`.
 - **Respects `prefers-reduced-motion`.** Visitors who ask for less motion get a static background and fully visible content.
+
+## Screenshots
+
+| Experience timeline | Featured projects |
+| --- | --- |
+| ![Experience timeline with stats and icons](images/preview-experience.jpg) | ![Featured client websites grid](images/preview-projects.jpg) |
 
 ## Tech
 
@@ -39,7 +47,7 @@ portfolio-site/
 ├── vercel.json         Cache and security headers for Vercel
 ├── resume.pdf          Downloadable resume
 ├── frames/             frame_001.jpg … frame_240.jpg (background sequence)
-└── images/             Project screenshots
+└── images/             Project screenshots and README previews
 ```
 
 ## Run locally
