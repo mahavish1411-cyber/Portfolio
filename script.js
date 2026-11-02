@@ -245,7 +245,6 @@ const FRAME_CONFIG = {
     ['.project-card', 'zoom', 0, 150],
     ['.project-card .bullets li', 'up', 90, 300],
     ['.back-row .btn', 'pop', 120, 0],
-    ['.footer-inner > *', 'up', 100, 0],
   ];
   // Siblings matched by the same rule stagger in DOM order (delay = base + index * step).
   rules.forEach(([sel, anim, step, base]) => {
@@ -291,6 +290,8 @@ const FRAME_CONFIG = {
   const update = () => {
     raf = 0;
     const vh = window.innerHeight;
+    // Safety net: at the very bottom of the page, reveal anything the observer could not reach.
+    if (window.scrollY + vh >= document.documentElement.scrollHeight - 2) $$('[data-anim]:not(.in)').forEach((el) => el.classList.add('in'));
     if (bar) {
       const max = document.documentElement.scrollHeight - vh;
       bar.style.transform = `scaleX(${max > 0 ? Math.min(window.scrollY / max, 1) : 0})`;
